@@ -75,9 +75,13 @@
 }
 
 .botao--principal {
+  padding: 20px 22px;
   border-radius: 10px;
 
   background-color: #004b86;
+
+  font-size: 0.75em;
+  font-weight: bolder;
 }
 
 .botao--principal:hover,
@@ -109,6 +113,7 @@
   color: #fff;
 
   font-size: 1em;
+  font-weight: bolder;
 }
 
 .chamada__acao {

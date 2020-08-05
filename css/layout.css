@@ -7,12 +7,22 @@
   margin-top: 12px;
 }
 
+.layout-cabecalho--home {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .layout-planos {
   padding: 80px 0;
 }
 
 .layout-chamada {
   padding: 80px 0;
+  margin-top: 60px;
 
   background-color: #7ab55c;
 }
@@ -27,6 +37,6 @@
 
   background-color: #484848;
   color: #fff;
-  
+
   text-align: center;
 }
