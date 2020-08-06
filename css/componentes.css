@@ -2,10 +2,30 @@
           PLANO
 \*------------------------*/
 .plano {
+  position: relative;
+
   padding: 10px;
+  height: 100%;
+
   border: 1px solid #95a4a5;
 
   font-size: 1rem;
+}
+
+.plano--mais-popular::after {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+
+  padding: 10px;
+
+  background-color: #c20303;
+  color: #fff;
+
+  font-size: 0.675em;
+  font-weight: bolder;
+
+  content: "MAIS POPULAR";
 }
 
 .plano__cabecalho {
@@ -31,6 +51,7 @@
 .plano__caracteristicas {
   padding: 0;
   margin: 20px 0;
+  height: 6.9em;
 
   font-size: 1em;
 
@@ -102,7 +123,7 @@
 
   color: #fff;
 
-  font-size: 3.375em;
+  font-size: 2.375em;
   line-height: 0.9;
   text-shadow: 1px 1px #313131;
 }
@@ -112,7 +133,7 @@
 
   color: #fff;
 
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: bolder;
 }
 
@@ -146,11 +167,24 @@
 }
 
 .depoimento > blockquote {
+  position: relative;
+
   margin: 0;
   padding: 0 60px;
 
   text-align: center;
   font-size: 1em;
+}
+
+.depoimento > blockquote::before {
+  position: absolute;
+  left: 0.07em;
+  top: -0.3em;
+
+  color: #ccc;
+
+  font-size: 8em;
+  content: "\201C";
 }
 
 .depoimento__autor {
@@ -166,4 +200,24 @@
 
 .depoimento__autor > p {
   margin-top: 10px;
+}
+
+/*------------------------*\
+      BOTAO CHAVEADOR
+\*------------------------*/
+.botao-chaveador {
+  width: 24px;
+  height: 24px;
+  border: 0;
+
+  background: none;
+  background-image: url("../images/bars.png");
+
+  outline: none;
+}
+
+@media (min-width: 992px) {
+  .botao-chaveador {
+    display: none;
+  }
 }
