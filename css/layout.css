@@ -51,6 +51,17 @@
   margin-top: 10px;
 }
 
+.navegacao--assinatura {
+  text-align: center;
+}
+
 .navegacao__menu {
   float: right;
+}
+
+/*------------------------*\
+          ASSINATURA
+\*------------------------*/
+.layout-assinatura {
+  padding: 120px 0;
 }
